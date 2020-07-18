@@ -1,0 +1,87 @@
+<TileDefinitions spriteSheet="Data/Sprites/Terrain32x32.png" layout="32,32">
+  
+  <TileDefinition
+      name="Grass"
+      spriteCoords="1,0"
+      mapColor="0,255,0"
+      spriteTint="255,255,255"
+      allowWalk="true"
+      allowFly="true"
+      allowSwim="false"
+      allowSight="true"
+      allowProjectiles="true"
+    />
+
+  <TileDefinition
+      name="DeadGrass"
+      spriteCoords="9,1"
+      mapColor="0,200,0"
+      spriteTint="255,255,255"
+      allowWalk="true"
+      allowFly="true"
+      allowSwim="false"
+      allowSight="true"
+      allowProjectiles="true"
+    />
+
+  <TileDefinition
+      name="QuadStoneWall"
+      spriteCoords="4,10"
+      mapColor="200,200,200"
+      spriteTint="255,255,255"
+      allowWalk="false"
+      allowFly="true"
+      allowSwim="false"
+      allowSight="false"
+      allowProjectiles="false"
+    />
+
+  <TileDefinition
+      name="DarkBrickWall"
+      spriteCoords="11,7"
+      mapColor="100,100,100"
+      spriteTint="255,255,255"
+      allowWalk="false"
+      allowFly="true"
+      allowSwim="false"
+      allowSight="false"
+      allowProjectiles="false"
+    />
+
+  <TileDefinition
+      name="DarkBrickMossWall"
+      spriteCoords="13,7"
+      mapColor="85,85,85"
+      spriteTint="255,255,255"
+      allowWalk="false"
+      allowFly="true"
+      allowSwim="false"
+      allowSight="false"
+      allowProjectiles="false"
+    />
+
+  <TileDefinition
+      name="Sand"
+      spriteCoords="6,1"
+      mapColor="255,255,75"
+      spriteTint="255,255,255"
+      allowWalk="true"
+      allowFly="true"
+      allowSwim="false"
+      allowSight="true"
+      allowProjectiles="true"
+    />
+
+  <TileDefinition
+      name="Water"
+      spriteCoords="0,22"
+      mapColor="0,0,200"
+      spriteTint="200,200,255"
+      allowWalk="false"
+      allowFly="true"
+      allowSwim="true"
+      allowSight="true"
+      allowProjectiles="true"
+    />
+  
+</TileDefinitions>

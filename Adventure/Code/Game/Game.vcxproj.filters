@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{8749cf07-6e27-4e54-a8f3-86ef9609fdff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{7f0d2776-8b85-42f4-af08-712f569535b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity">
+      <UniqueIdentifier>{ce4e4778-e218-4f6a-b255-12f5df7dfe02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Map">
+      <UniqueIdentifier>{a0123728-bde0-4577-8480-8dc50e35ec86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Map\Tile">
+      <UniqueIdentifier>{931c301e-70e8-4818-914d-3bdcaec26ed1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{b6fb54dd-8ad0-4935-add3-804161a48ff1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Gameplay">
+      <UniqueIdentifier>{b1bc8e7f-a391-4257-b640-62fdce2f3471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Map\MapGeneration">
+      <UniqueIdentifier>{fe3f369f-9d11-47a3-b915-cfe93b1124aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Map\MapGeneration\Mutations">
+      <UniqueIdentifier>{4b426315-dc8a-4300-b13c-11d8e9bd54b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Map\MapGeneration\Worms">
+      <UniqueIdentifier>{7bfbb98c-c895-47f7-be41-6f1b3cbadca9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Map\MapGeneration\Independent Modifications">
+      <UniqueIdentifier>{78e1e3ce-3e52-4ca0-a31b-9d331f17237b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Map\MapGeneration\CellularAutomata">
+      <UniqueIdentifier>{94a0b08a-89e6-4da4-b67d-b274c7098b7a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main_Windows.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="App.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity\Debris.cpp">
+      <Filter>Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="World.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Map\Map.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity\Entity2D.cpp">
+      <Filter>Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Map\MapDefinition.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Map\Tile\Tile.cpp">
+      <Filter>Map\Tile</Filter>
+    </ClCompile>
+    <ClCompile Include="Map\Tile\TileDefinition.cpp">
+      <Filter>Map\Tile</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity\Actor2D.cpp">
+      <Filter>Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity\EntityDefinition.cpp">
+      <Filter>Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity\ActorDefinition.cpp">
+      <Filter>Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Map\MapGeneration\MapGenerationStep.cpp">
+      <Filter>Map\MapGeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="Map\MapGeneration\MutationGeneration.cpp">
+      <Filter>Map\MapGeneration\Mutations</Filter>
+    </ClCompile>
+    <ClCompile Include="Map\MapGeneration\WormGeneration.cpp">
+      <Filter>Map\MapGeneration\Worms</Filter>
+    </ClCompile>
+    <ClCompile Include="Map\MapGeneration\TileModificaitonStep.cpp">
+      <Filter>Map\MapGeneration\Independent Modifications</Filter>
+    </ClCompile>
+    <ClCompile Include="Map\MapGeneration\SingleModificationStep.cpp">
+      <Filter>Map\MapGeneration\Independent Modifications</Filter>
+    </ClCompile>
+    <ClCompile Include="Map\MapGeneration\FromImageGeneration.cpp">
+      <Filter>Map\MapGeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="Map\MapGeneration\IfTagStep.cpp">
+      <Filter>Map\MapGeneration\Independent Modifications</Filter>
+    </ClCompile>
+    <ClCompile Include="Map\MapGeneration\SetTagStep.cpp">
+      <Filter>Map\MapGeneration\Independent Modifications</Filter>
+    </ClCompile>
+    <ClCompile Include="Map\MapGeneration\AllGeneration.cpp">
+      <Filter>Map\MapGeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="Map\MapGeneration\CellularAutomataGeneration.cpp">
+      <Filter>Map\MapGeneration\CellularAutomata</Filter>
+    </ClCompile>
+    <ClCompile Include="Map\MapGeneration\CAG_Cardinal.cpp">
+      <Filter>Map\MapGeneration\CellularAutomata</Filter>
+    </ClCompile>
+    <ClCompile Include="Map\MapGeneration\CAG_Moore.cpp">
+      <Filter>Map\MapGeneration\CellularAutomata</Filter>
+    </ClCompile>
+    <ClCompile Include="Map\MapGeneration\CAG_Taxicab.cpp">
+      <Filter>Map\MapGeneration\CellularAutomata</Filter>
+    </ClCompile>
+    <ClCompile Include="Map\MapGeneration\CAG_Circular.cpp">
+      <Filter>Map\MapGeneration\CellularAutomata</Filter>
+    </ClCompile>
+    <ClCompile Include="Map\MapGeneration\WG_Drunken.cpp">
+      <Filter>Map\MapGeneration\Worms</Filter>
+    </ClCompile>
+    <ClCompile Include="Map\MapGeneration\WG_DrunkenDirection.cpp">
+      <Filter>Map\MapGeneration\Worms</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="App.hpp">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.hpp">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Debris.hpp">
+      <Filter>Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="World.hpp">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineBuildPreferences.hpp" />
+    <ClInclude Include="GlobalSystems.hpp">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Map\Map.hpp">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Entity2D.hpp">
+      <Filter>Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Map\MapDefinition.hpp">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Map\Tile\Tile.hpp">
+      <Filter>Map\Tile</Filter>
+    </ClInclude>
+    <ClInclude Include="Map\Tile\TileDefinition.hpp">
+      <Filter>Map\Tile</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Actor2D.hpp">
+      <Filter>Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\EntityDefinition.hpp">
+      <Filter>Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\ActorDefinition.hpp">
+      <Filter>Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Map\MapGeneration\MapGenerationStep.hpp">
+      <Filter>Map\MapGeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="Map\MapGeneration\MutationGeneration.hpp">
+      <Filter>Map\MapGeneration\Mutations</Filter>
+    </ClInclude>
+    <ClInclude Include="Map\MapGeneration\WormGeneration.hpp">
+      <Filter>Map\MapGeneration\Worms</Filter>
+    </ClInclude>
+    <ClInclude Include="Map\MapGeneration\TileModificaitonStep.hpp">
+      <Filter>Map\MapGeneration\Independent Modifications</Filter>
+    </ClInclude>
+    <ClInclude Include="Map\MapGeneration\SingleModificationStep.hpp">
+      <Filter>Map\MapGeneration\Independent Modifications</Filter>
+    </ClInclude>
+    <ClInclude Include="Map\MapGeneration\FromImageGeneration.hpp">
+      <Filter>Map\MapGeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="Map\MapGeneration\IfTagStep.hpp">
+      <Filter>Map\MapGeneration\Independent Modifications</Filter>
+    </ClInclude>
+    <ClInclude Include="Map\MapGeneration\SetTagStep.hpp">
+      <Filter>Map\MapGeneration\Independent Modifications</Filter>
+    </ClInclude>
+    <ClInclude Include="Map\MapGeneration\AllGeneration.hpp">
+      <Filter>Map\MapGeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="Map\MapGeneration\CellularAutomataGeneration.hpp">
+      <Filter>Map\MapGeneration\CellularAutomata</Filter>
+    </ClInclude>
+    <ClInclude Include="Map\MapGeneration\CAG_Cardinal.hpp">
+      <Filter>Map\MapGeneration\CellularAutomata</Filter>
+    </ClInclude>
+    <ClInclude Include="Map\MapGeneration\CAG_Moore.hpp">
+      <Filter>Map\MapGeneration\CellularAutomata</Filter>
+    </ClInclude>
+    <ClInclude Include="Map\MapGeneration\CAG_Taxicab.hpp">
+      <Filter>Map\MapGeneration\CellularAutomata</Filter>
+    </ClInclude>
+    <ClInclude Include="Map\MapGeneration\CAG_Circular.hpp">
+      <Filter>Map\MapGeneration\CellularAutomata</Filter>
+    </ClInclude>
+    <ClInclude Include="Map\MapGeneration\WG_Drunken.hpp">
+      <Filter>Map\MapGeneration\Worms</Filter>
+    </ClInclude>
+    <ClInclude Include="Map\MapGeneration\WG_DrunkenDirection.hpp">
+      <Filter>Map\MapGeneration\Worms</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\..\Run\Data\Gameplay\TileDefinitions.xml">
+      <Filter>Data\Gameplay</Filter>
+    </Xml>
+    <Xml Include="..\..\Run\Data\Gameplay\MapDefinitions.xml">
+      <Filter>Data\Gameplay</Filter>
+    </Xml>
+    <Xml Include="..\..\Run\Data\GameConfig.xml">
+      <Filter>Data</Filter>
+    </Xml>
+    <Xml Include="..\..\Run\Data\Gameplay\Entity\ActorDefinitions.xml">
+      <Filter>Data\Gameplay</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>

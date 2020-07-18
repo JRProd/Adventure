@@ -1,0 +1,9 @@
+<!--Game Config contians all data that will be populated into the global blackboard-->
+<GameConfig
+  clientAspect="1.777"
+  gameMaxHeight="9"
+  uiMaxWidth="1920"
+  uiMaxHeight="1080"
+
+  gameTitle="Adventure"
+  />

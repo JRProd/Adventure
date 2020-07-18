@@ -1,0 +1,54 @@
+<MapDefinitions>
+
+  <MapDefinition name="Ruins" mapSize="40,25">
+    <StartingTiles fillTile="Sand" boundaryTile="DarkBrickWall" inaccesableTile="DarkBrickWall"/>
+    <Generation>
+      <Mutate mutationChance=".25">
+        <TileStep tileModification="Grass" tileFilter="Sand"/>
+      </Mutate>
+      <Worm type="DrunkenDirection" direction="90" intensity="1" wormNumber="2~3" wormLength="15~30">
+        <TileStep tileModification="Water"/>
+        <SetTagStep tags="water"/>
+      </Worm>
+      <FromImage imageFilePath="Data/Maps/Test.png" chancePerTile=".90"/>
+      <Mutate mutationChance=".1">
+        <TileStep tileModification="DeadGrass" tileFilter="Grass"/>
+      </Mutate>
+      <Mutate chanceToRun=".25" interations="1~3" mutationChance=".33">
+        <TileStep tileModification="DarkBrickMossWall" tileFilter="DarkBrickWall"/>
+      </Mutate>
+    </Generation>
+  </MapDefinition>
+
+  <MapDefinition name="Island" mapSize="22, 25">
+    <StartingTiles fillTile="Grass" boundaryTile="DarkBrickWall" inaccesableTile="Water"/>
+    <Generation>
+      <All>
+        <TileStep tileModification="DarkBrickWall" tileFilter="DarkBrickWall"/>
+        <SetTagStep tags="Fixed"/>
+      </All>
+      <Mutate chancePerTile=".65">
+        <IfTagStep tags="Fixed"/>
+        <TileStep tileModification="DarkBrickMossWall"/>
+      </Mutate>
+      <CellularAutomata type="Cardinal" neighbor="DarkBrickWall">
+        <IfTagStep tags="!Fixed" />
+        <TileStep tileModification="Water"/>
+      </CellularAutomata>
+      <!--Create some lakes in the map-->
+      <Worm wormType="Drunken" wormNumber="5~7" wormLength="20~40" >
+        <IfTagStep tags="!Fixed"/>
+        <TileStep tileModification="Water"/>
+        <SetTagStep tags="water"/>
+      </Worm>
+      <FromImage imageFilePath="Data/Maps/WaterTemple.png" alignment="0~.2,.6~.9"/>
+      <CellularAutomata type="Cardinal" neighbor="Water" radius="1.f">
+        <TileStep tileModification="Sand" tileFilter="Grass"/>
+      </CellularAutomata>
+      <Mutate chanceToRun=".4">
+        <TileStep tileModification="DeadGrass" tileFilter="Grass"/>
+      </Mutate>
+    </Generation>
+  </MapDefinition>
+  
+</MapDefinitions>

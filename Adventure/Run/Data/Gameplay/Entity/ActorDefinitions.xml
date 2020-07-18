@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ActorDefintions>
+  
+  <ActorDefinition name="Villager">
+    <Size physicsSize=".25" visualSize="(-0.5,-0.3),(0.5,1.033)"/>
+    <Movement canWalk="true"/>
+    <Health maxHealth="10" startingHealth="10"/>
+    <Animations spriteSheet="Data/Sprites/KushnariovaCharacters_12x53.png" spriteLayout="12,53" fps="10">
+      <Idle spriteIndexes="6, 7, 8, 7" fps="3"/>
+      <WalkEast spriteIndexes="3, 4, 5, 4"/>
+      <WalkNorth spriteIndexes="0, 1, 2, 1"/>
+      <WalkWest spriteIndexes="9, 10, 11, 9"/>
+      <WalkSouth spriteIndexes="6, 7, 8, 7"/>
+    </Animations>
+  </ActorDefinition>
+
+  <ActorDefinition name="Mermaid">
+    <Size physicsSize=".25" visualSize="(-0.5,-0.3),(0.5,1.033)"/>
+    <Movement canWalk="true" canSwim="true"/>
+    <Health maxHealth="8" startingHealth="8"/>
+    <Animations spriteSheet="Data/Sprites/KushnariovaCharacters_12x53.png" spriteLayout="12,53" fps="10">
+      <Idle spriteIndexes="234, 235, 236, 235" fps="3"/>
+      <WalkEast spriteIndexes="231, 232, 233, 232"/>
+      <WalkNorth spriteIndexes="228, 229, 230, 229"/>
+      <WalkWest spriteIndexes="237, 238, 239, 238"/>
+      <WalkSouth spriteIndexes="234, 235, 236, 235"/>
+    </Animations>
+  </ActorDefinition>
+
+  <ActorDefinition name="FlowerGuy">
+    <Size physicsSize=".25" visualSize="(-0.5,-0.3),(0.5,1.033)"/>
+    <Movement canWalk="true"/>
+    <Health maxHealth="8" startingHealth="8"/>
+    <Animations spriteSheet="Data/Sprites/KushnariovaCharacters_12x53.png" spriteLayout="12,53" fps="10">
+      <Idle spriteIndexes="138, 139, 140, 139" fps="3"/>
+      <WalkEast spriteIndexes="135, 136, 137, 136"/>
+      <WalkNorth spriteIndexes="132, 133, 134, 133"/>
+      <WalkWest spriteIndexes="141, 142, 143, 142"/>
+      <WalkSouth spriteIndexes="138, 139, 140, 139"/>
+    </Animations>
+  </ActorDefinition>
+    
+</ActorDefintions>
